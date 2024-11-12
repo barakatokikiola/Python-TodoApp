@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    margin: auto;
+    width: 100vw;
+    background-color: teal;
+}
+.header-text {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   color: rgb(217, 211, 211);
+   text-transform: uppercase;
+}
+form {
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius:5px 0 0 5px;
+    outline: none;
+    border: none;
+}
+.input-btn {
+    padding: 17px 12px;
+    background-color: rgb(2, 93, 93);
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+}
+.todo {
+    background-color: hsl(0, 0%, 100%, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   margin: 0 auto;
+   width: 70vw;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.todo-text{
+    float: left;
+    margin: 10px 0;
+    color: rgb(3, 43, 43);
+    font-weight: 500;
+}
+.todo-btn {
+    margin: auto 0;
+    float: right;
+ 
+}
+.edit-btn, .delete-btn {
+    text-decoration: none;
+}
+.edit-btn{
+    background-color: rgb(10, 101, 92);
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: white;
+}
+
+.delete-btn{
+    background-color: red;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: white;
+}
+
+.back-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(9, 73, 73);
+    border: solid 3px rgb(3, 79, 79);
+    text-decoration: none;
+}

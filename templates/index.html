@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Todo App</title>
+    <link rel="stylesheet" href="/static/todo.css">
+    <script src="https://kit.fontawesome.com/c16d4811e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-text">Todo App</h1>
+        <div class="todo">
+            <form method="POST" action="/">
+                <input type="text" name="content" placeholder="Enter task">
+                <button type="submit" class="input-btn">Add</button>
+            </form>
+            <div class="task">
+                {% for task in tasks %}
+                    <div class="todo-text">
+                        <span> {{ task }}</span>
+                    </div>
+                    <div class="todo-btn">
+                        <a href="/edit/{{ loop.index0 }}" class="edit-btn">Edit</a>
+                        <a href="/delete/{{ loop.index0 }}" class="delete-btn">Delete</a>
+                    </div>
+                {% else %}
+                    <div>
+                        <h2>No Task</h2>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
